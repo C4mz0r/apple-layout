@@ -1,0 +1,99 @@
+#outer-nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 48px;
+  display: flex;
+  align-items: center; 
+  position: absolute;
+  top: 0;
+  width: 100%; 
+}
+
+nav {
+  width: 50%;
+  margin: 0 auto;
+}
+
+nav > ul {
+    display: flex;    
+    justify-content: space-between; 
+    height: 19px; /* fix the height so that items don't shift after apple logo was added */  
+}
+
+#promos {
+  #display: flex;	
+}
+
+.promos {
+	float:left;
+	width: 25%;
+	height: 0;
+    padding-top: 10%;
+	background-repeat:no-repeat;
+	position: center;		
+}
+
+#promo1 {
+	background-image:url("images/promo1a.png");
+}
+#promo2 {
+	background-image:url("images/promo2.png");
+}
+#promo3 {
+	background-image:url("images/promo3.png");
+}
+#promo4 {
+	background-image:url("images/promo4.png");
+}
+
+
+aa#apple-logo{background-repeat:no-repeat;background-size:20px 44px;background-image:url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg");background-position:center center;width:20px}
+
+svg {
+  width:20px;
+  height: 44px;
+  fill: white;
+  position: relative;
+  top: -16px; /* move the logo up so that it aligns vertically with nav items */
+}
+
+/* move the search icon up so that it aligns vertically with other nav items */
+#search-img {
+  position: relative;
+  top: -16px;
+}
+
+/* ditto for the bag icon */
+#bag-img {
+  position: relative;
+  top: -3px;
+  color: white;
+}
+
+
+
+/* Navigation links style and hovering */
+nav > ul > li > a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #999;
+}
+
+svg:hover {
+  fill: #999;
+}
+
+#background {
+  background-image: url("images/apple-background.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 57%;
+  position: relative;
+  z-index: -1;  
+}
+ 
+
